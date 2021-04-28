@@ -4,14 +4,10 @@ package net.glitchyystudios.better_underground.progress;
 		import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 		import net.minecraft.block.Block;
 		import net.minecraft.block.Blocks;
-		import net.minecraft.block.Material;
 		import net.minecraft.item.BlockItem;
 		import net.minecraft.item.ItemGroup;
 		import net.minecraft.util.Identifier;
 		import net.minecraft.util.registry.Registry;
-		import net.minecraft.world.gen.feature.DefaultFeatureConfig;
-		import net.minecraft.world.gen.feature.util.FeatureContext;
-		import org.lwjgl.system.CallbackI;
 
 public class NewModClass implements ModInitializer {
 	public static final Block compressed_stone = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE));
@@ -19,6 +15,9 @@ public class NewModClass implements ModInitializer {
 	public static final Block marble = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
 public static final Block dolomite = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE));
 public static final Block limestone = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final Block terracottastrata = new Block(FabricBlockSettings.copy(Blocks.TERRACOTTA));
+public static final Block example = new Block(FabricBlockSettings.copy(Blocks.BLACK_WOOL));
+
 
 	@Override
 	public void onInitialize() {
@@ -32,7 +31,9 @@ Registry.register(Registry.BLOCK, new Identifier("better_underground", "dolomite
 Registry.register(Registry.ITEM, new Identifier("better_underground", "dolomite"), new BlockItem(dolomite, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 Registry.register(Registry.BLOCK, new Identifier("better_underground", "limestone"), limestone);
 		Registry.register(Registry.ITEM, new Identifier("better_underground", "limestone"), new BlockItem(limestone, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-
+Registry.register(Registry.BLOCK, new Identifier("better_underground", "terracottastrata"), terracottastrata);
+Registry.register(Registry.ITEM, new Identifier("better_underground", "terracottastrata"), new BlockItem(terracottastrata, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+Registry.register(Registry.BLOCK, new Identifier("better_underground", "example"), example);
 
 	}
 
