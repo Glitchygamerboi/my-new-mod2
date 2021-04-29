@@ -4,13 +4,14 @@
   "version": "${version}",
 
   "name": "Better underground",
-  "description": "A revival of another mod i made in MCreator but for 1.17 and not MCreator",
+  "description": "A revival of another mod I made in MCreator but for 1.17 and not MCreator",
   "authors": [
-    "Glitchyy, LordDeatHunter(for code stuff like constructive criticism on textures, lordDeatHunter is a chad)"
+    "Glitchyy",
+    "LordDeatHunter(for code stuff like constructive criticism on textures, lordDeatHunter is a chad)"
   ],
   "contact": {
-    "homepage": "none",
-    "sources": "no github page yet"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-underground-geovariation#c1",
+    "sources": "https://github.com/Glitchygamerboi/my-new-mod2"
   },
 
   "license": "CC0-1.0",
@@ -19,19 +20,15 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.glitchyystudios.better_underground.progress.NewModClass"
+      "net.glitchyystudios.better_underground.BetterUnderground"
     ]
   },
   "mixins": [
     "modid.mixins.json"
   ],
 
-
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
