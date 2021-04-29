@@ -15,8 +15,7 @@ public class NewModClass implements ModInitializer {
 	public static final Block marble = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
 public static final Block dolomite = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE));
 public static final Block limestone = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block terracottastrata = new Block(FabricBlockSettings.copy(Blocks.TERRACOTTA));
-public static final Block example = new Block(FabricBlockSettings.copy(Blocks.BLACK_WOOL));
+public static final Block lake_missoula_claystone_sediment = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
 
 
 	@Override
@@ -31,10 +30,8 @@ Registry.register(Registry.BLOCK, new Identifier("better_underground", "dolomite
 Registry.register(Registry.ITEM, new Identifier("better_underground", "dolomite"), new BlockItem(dolomite, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 Registry.register(Registry.BLOCK, new Identifier("better_underground", "limestone"), limestone);
 		Registry.register(Registry.ITEM, new Identifier("better_underground", "limestone"), new BlockItem(limestone, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-Registry.register(Registry.BLOCK, new Identifier("better_underground", "terracottastrata"), terracottastrata);
-Registry.register(Registry.ITEM, new Identifier("better_underground", "terracottastrata"), new BlockItem(terracottastrata, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-Registry.register(Registry.BLOCK, new Identifier("better_underground", "example"), example);
-
+Registry.register(Registry.BLOCK, new Identifier("better_undergound", "lake_missoula_claystone_sediment"), lake_missoula_claystone_sediment);
+		Registry.register(Registry.ITEM, new Identifier("better_underground", "lake_missoula_claystone_sediment"), new BlockItem(lake_missoula_claystone_sediment, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 	}
 
 }
