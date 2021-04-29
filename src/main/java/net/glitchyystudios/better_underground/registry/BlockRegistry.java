@@ -10,12 +10,12 @@ public class BlockRegistry {
 
     private BlockRegistry(){}
 
-    public static final Block COMPRESSED_STONE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE));
-    public static final Block RHYOLITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-    public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-    public static final Block DOLOMITE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE));
-    public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-    public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
+    public static final Block COMPRESSED_STONE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block RHYOLITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block DOLOMITE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 
     public static void register() {
         Registry.register(Registry.BLOCK, Utils.ID("compressed_stone"), COMPRESSED_STONE);
