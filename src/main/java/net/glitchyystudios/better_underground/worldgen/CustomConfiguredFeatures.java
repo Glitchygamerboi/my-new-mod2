@@ -21,6 +21,7 @@ public class CustomConfiguredFeatures {
     private static ConfiguredFeature<?, ?> ORE_DOLOMITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.DOLOMITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(79)).spreadHorizontally().repeat(10);
     private static ConfiguredFeature<?, ?> ORE_LIMESTONE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LIMESTONE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(79)).spreadHorizontally().repeat(10);
     private static ConfiguredFeature<?, ?> ORE_LAKE_MISSOULA_CLAYSTONE_SEDIMENT = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LAKE_MISSOULA_CLAYSTONE_SEDIMENT.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(79)).spreadHorizontally().repeat(10);
+    private static ConfiguredFeature<?, ?> ORE_ALKALI_FELDSPAR_GRANITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.ALKALI_FELDSPAR_GRANITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(79)).spreadHorizontally().repeat(10);
 
     public static void register() {
         registerOre("compressed_stone", ORE_COMPRESSED_STONE);
@@ -29,6 +30,7 @@ public class CustomConfiguredFeatures {
         registerOre("dolomite", ORE_DOLOMITE);
         registerOre("limestone", ORE_LIMESTONE);
         registerOre("lake_missoula_claystone_sediment", ORE_LAKE_MISSOULA_CLAYSTONE_SEDIMENT);
+        registerOre("alkali_feldspar_granite", ORE_ALKALI_FELDSPAR_GRANITE);
     }
 
     private static void registerOre(String id, ConfiguredFeature<?, ?> ORE) {

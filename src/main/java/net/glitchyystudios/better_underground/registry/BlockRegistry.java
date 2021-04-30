@@ -16,7 +16,7 @@ public class BlockRegistry {
     public static final Block DOLOMITE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool().strength(1.5F, 6.0F));
     public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
     public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-
+public static final Block ALKALI_FELDSPAR_GRANITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
     public static void register() {
         Registry.register(Registry.BLOCK, Utils.ID("compressed_stone"), COMPRESSED_STONE);
         Registry.register(Registry.BLOCK, Utils.ID("rhyolite"), RHYOLITE);
@@ -24,6 +24,7 @@ public class BlockRegistry {
         Registry.register(Registry.BLOCK, Utils.ID("dolomite"), DOLOMITE);
         Registry.register(Registry.BLOCK, Utils.ID("limestone"), LIMESTONE);
         Registry.register(Registry.BLOCK, Utils.ID("lake_missoula_claystone_sediment"), LAKE_MISSOULA_CLAYSTONE_SEDIMENT);
+        Registry.register(Registry.BLOCK, Utils.ID("alkali_feldspar_granite"), ALKALI_FELDSPAR_GRANITE);
     }
 
 }
