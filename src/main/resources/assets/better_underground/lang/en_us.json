@@ -4,5 +4,7 @@
 	"block.better_underground.rhyolite": "Rhyolite",
 	"block.better_underground.compressed_stone": "Compressed Stone",
 	"block.better_underground.limestone": "Limestone",
-	"block.better_underground.lake_missoula_claystone_sediment": "Lake-Missoula Claystone-Sediment"
+	"block.better_underground.lake_missoula_claystone_sediment": "Lake Missoula Claystone Sediment",
+
+	"itemGroup.better_underground.better_underground": "Better Underground"
 }
