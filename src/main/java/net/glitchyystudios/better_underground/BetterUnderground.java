@@ -7,6 +7,8 @@ import net.glitchyystudios.better_underground.worldgen.CustomConfiguredFeatures;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;
+
 public class BetterUnderground implements ModInitializer {
 
 	public static final String MOD_ID = "better_underground";
@@ -17,6 +19,7 @@ public class BetterUnderground implements ModInitializer {
 		BlockRegistry.register();
 		ItemRegistry.register();
 		CustomConfiguredFeatures.register();
+
 		LOGGER.info("[Better Underground] has finished initializing!");
 	}
 
