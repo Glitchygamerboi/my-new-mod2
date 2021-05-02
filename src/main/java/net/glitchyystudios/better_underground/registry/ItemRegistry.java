@@ -19,6 +19,7 @@ public class ItemRegistry {
     public static final Item LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new BlockItem(BlockRegistry.LAKE_MISSOULA_CLAYSTONE_SEDIMENT, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item ALKALI_FELDSPAR_GRANITE = new BlockItem(BlockRegistry.ALKALI_FELDSPAR_GRANITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item RHYODACITE = new BlockItem(BlockRegistry.RHYODACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
+    public static final Item NEPHELINE = new BlockItem(BlockRegistry.NEPHELINE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
 
     public static void register() {
         Registry.register(Registry.ITEM, Utils.ID("compressed_stone"),COMPRESSED_STONE);
@@ -29,6 +30,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("lake_missoula_claystone_sediment"), LAKE_MISSOULA_CLAYSTONE_SEDIMENT);
         Registry.register(Registry.ITEM, Utils.ID("alkali_feldspar_granite"), ALKALI_FELDSPAR_GRANITE);
         Registry.register(Registry.ITEM, Utils.ID("rhyodacite"), RHYODACITE);
+        Registry.register(Registry.ITEM, Utils.ID("nepheline"), NEPHELINE);
     }
 
 }
