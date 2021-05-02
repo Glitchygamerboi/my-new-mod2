@@ -1,2 +1,2 @@
-As you all know, this is a geology mod, i made this as a passion project, expect geneation to come soon
+As you all know, this is a geology mod, i made this as a passion project, adds new rock types
 
