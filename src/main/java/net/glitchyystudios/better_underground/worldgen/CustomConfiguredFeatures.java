@@ -17,14 +17,15 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 public class CustomConfiguredFeatures {
 
     private static ConfiguredFeature<?, ?> ORE_COMPRESSED_STONE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.COMPRESSED_STONE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(16)).spreadHorizontally().repeat(10);
-    private static ConfiguredFeature<?, ?> ORE_RHYOLITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYOLITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_MARBLE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.MARBLE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_RHYOLITE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYOLITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_MARBLE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.MARBLE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
     private static ConfiguredFeature<?, ?> ORE_DOLOMITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.DOLOMITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(16)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_LIMESTONE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LIMESTONE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_LAKE_MISSOULA_CLAYSTONE_SEDIMENT = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LAKE_MISSOULA_CLAYSTONE_SEDIMENT.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_ALKALI_FELDSPAR_GRANITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.ALKALI_FELDSPAR_GRANITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_RHYODACITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYODACITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
-    private static ConfiguredFeature<?, ?> ORE_NEPHELINE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.NEPHELINE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_LIMESTONE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LIMESTONE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_LAKE_MISSOULA_CLAYSTONE_SEDIMENT = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.LAKE_MISSOULA_CLAYSTONE_SEDIMENT.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_ALKALI_FELDSPAR_GRANITE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.ALKALI_FELDSPAR_GRANITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_RHYODACITE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYODACITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_NEPHELINE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.NEPHELINE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
+    private static ConfiguredFeature<?, ?> ORE_GREY_DACITE = Feature.SCATTERED_ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.GREY_DACITE.getDefaultState(), 33)).method_36296(YOffset.fixed(0), YOffset.fixed(200)).spreadHorizontally().repeat(16);
 
     public static void register() {
         registerOre("compressed_stone", ORE_COMPRESSED_STONE);
@@ -36,6 +37,7 @@ public class CustomConfiguredFeatures {
         registerOre("alkali_feldspar_granite", ORE_ALKALI_FELDSPAR_GRANITE);
         registerOre("rhyodacite", ORE_RHYODACITE);
         registerOre("nepheline", ORE_NEPHELINE);
+        registerOre("grey_dacite", ORE_GREY_DACITE);
     }
 
     private static void registerOre(String id, ConfiguredFeature<?, ?> ORE) {

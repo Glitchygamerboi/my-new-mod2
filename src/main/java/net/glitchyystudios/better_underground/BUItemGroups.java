@@ -7,6 +7,6 @@ import net.minecraft.item.ItemStack;
 
 public class BUItemGroups {
 
-    public static final ItemGroup BETTER_UNDERGROUND = FabricItemGroupBuilder.create(Utils.ID("better_underground")).icon(() -> new ItemStack(ItemRegistry.RHYOLITE)).build();
+    public static final ItemGroup BETTER_UNDERGROUND = FabricItemGroupBuilder.create(Utils.ID("better_underground")).icon(() -> new ItemStack(ItemRegistry.GREY_DACITE)).build();
 
 }

@@ -19,6 +19,7 @@ public class BetterUnderground implements ModInitializer {
 		BlockRegistry.register();
 		ItemRegistry.register();
 		CustomConfiguredFeatures.register();
+		System.out.println("THANKS FOR CONTRIBUTING, CONTRIBUTORS");
 
 		LOGGER.info("[Better Underground] has finished initializing!");
 	}
