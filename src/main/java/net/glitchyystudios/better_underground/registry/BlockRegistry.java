@@ -20,6 +20,8 @@ public static final Block ALKALI_FELDSPAR_GRANITE = new Block(FabricBlockSetting
 public static final Block RHYODACITE =new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 public static final Block NEPHELINE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 public static final Block GREY_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+public static final Block PEGMATITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+        public static final Block CLEAN_PEGMATITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 //Follow the template below if you want to contribute a block, im going to create the BlockItem
 public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(0F, 0F));
     public static void register() {
@@ -33,7 +35,9 @@ public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blo
         Registry.register(Registry.BLOCK, Utils.ID("rhyodacite"), RHYODACITE);
         Registry.register(Registry.BLOCK, Utils.ID("nepheline"), NEPHELINE);
         Registry.register(Registry.BLOCK, Utils.ID("grey_dacite"), GREY_DACITE);
-        //Follow the template below to register an item
+        Registry.register(Registry.BLOCK, Utils.ID("pegmatite"), PEGMATITE);
+        Registry.register(Registry.BLOCK, Utils.ID("clean_pegmatite"), CLEAN_PEGMATITE);
+        //Follow the template below to register an block
         Registry.register(Registry.BLOCK, Utils.ID("example_block"), EXAMPLE_BLOCK);
     }
 

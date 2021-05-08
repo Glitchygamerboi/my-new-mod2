@@ -20,6 +20,7 @@ public class BetterUnderground implements ModInitializer {
 		ItemRegistry.register();
 		CustomConfiguredFeatures.register();
 		System.out.println("THANKS FOR CONTRIBUTING, CONTRIBUTORS");
+		System.out.println("HOW MINECRAFT GOT ME INTO CODING");
 
 		LOGGER.info("[Better Underground] has finished initializing!");
 	}
