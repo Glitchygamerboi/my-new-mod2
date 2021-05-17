@@ -1,6 +1,5 @@
 package net.glitchyystudios.better_underground.registry;
 
-import jdk.nashorn.internal.ir.Block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.glitchyystudios.better_underground.BUItemGroups;
 import net.glitchyystudios.better_underground.Utils;
@@ -21,8 +20,6 @@ public class ItemRegistry {
     public static final Item RHYODACITE = new BlockItem(BlockRegistry.RHYODACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item NEPHELINE = new BlockItem(BlockRegistry.NEPHELINE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item GREY_DACITE = new BlockItem(BlockRegistry.GREY_DACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
-    public static final Item PEGMATITE = new BlockItem(BlockRegistry.PEGMATITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
-    public static final Item CLEAN_PEGMATITE = new BlockItem(BlockRegistry.CLEAN_PEGMATITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
 
     public static void register() {
         Registry.register(Registry.ITEM, Utils.ID("compressed_stone"),COMPRESSED_STONE);
@@ -35,8 +32,6 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("rhyodacite"), RHYODACITE);
         Registry.register(Registry.ITEM, Utils.ID("nepheline"), NEPHELINE);
         Registry.register(Registry.ITEM, Utils.ID("grey_dacite"), GREY_DACITE);
-        Registry.register(Registry.ITEM, Utils.ID("pegmatite"), PEGMATITE);
-        Registry.register(Registry.ITEM, Utils.ID("clean_pegmatite"), CLEAN_PEGMATITE);
     }
 
 }
