@@ -21,6 +21,7 @@ public class ItemRegistry {
     public static final Item RHYODACITE = new BlockItem(BlockRegistry.RHYODACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item NEPHELINE = new BlockItem(BlockRegistry.NEPHELINE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item GREY_DACITE = new BlockItem(BlockRegistry.GREY_DACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
+   //you can reuse the code to add more blocks, make sure to change the names, if you are making an item, replace BlockItem with Item
     public static final Item STONE_SAND = new BlockItem(BlockRegistry.STONE_SAND, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item DINOSTATUE = new BlockItem(BlockRegistry.DINOSTATUE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
 
@@ -35,6 +36,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("rhyodacite"), RHYODACITE);
         Registry.register(Registry.ITEM, Utils.ID("nepheline"), NEPHELINE);
         Registry.register(Registry.ITEM, Utils.ID("grey_dacite"), GREY_DACITE);
+        //use the code below to register an item, rename the item to the name of your item
         Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
         Registry.register(Registry.ITEM, Utils.ID("dinostatue"), DINOSTATUE);
     }

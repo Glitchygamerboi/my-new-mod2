@@ -27,6 +27,7 @@ public class CustomConfiguredFeatures {
     private static ConfiguredFeature<?, ?> ORE_RHYODACITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYODACITE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
     private static ConfiguredFeature<?, ?> ORE_NEPHELINE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.NEPHELINE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
     private static ConfiguredFeature<?, ?> ORE_GREY_DACITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.GREY_DACITE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
+    //use the code below for making a configuredFeature
     private static ConfiguredFeature<?, ?> ORE_STONE_SAND = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.STONE_SAND.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(64))))).spreadHorizontally().repeat(16);
 
         public static void register() {
@@ -40,6 +41,7 @@ public class CustomConfiguredFeatures {
             registerOre("rhyodacite", ORE_RHYODACITE);
             registerOre("nepheline", ORE_NEPHELINE);
             registerOre("grey_dacite", ORE_GREY_DACITE);
+            //use the code below to register a ConfiguredFeature, for using configured features in another mod, see https://fabricmc.net/wiki/tutorial:ores and look below @Override
             registerOre("stone_sand", ORE_STONE_SAND);
 
 

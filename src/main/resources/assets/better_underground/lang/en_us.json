@@ -11,5 +11,6 @@
 	"block.better_underground.grey_dacite": "Grey Dacite",
 	"block.better_underground.stone_sand": "Stone Sand",
 	"block.better_underground.dinostatue": "Dinosaur Statue",
+	"use the json below to make a lang entry for a block/item, for an item, replace the block. with item.": "do that",
 	"itemGroup.better_underground.better_underground": "Better Underground"
 }
