@@ -21,7 +21,7 @@ repositories {
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:21w20a"
-	mappings "net.fabricmc:yarn:21w20a+build.1:v2"
+	mappings "net.fabricmc:yarn:21w20a+build.10:v2"
 	modImplementation "net.fabricmc:fabric-loader:0.11.3"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
