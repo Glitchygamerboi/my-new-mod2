@@ -1,6 +1,5 @@
 package net.glitchyystudios.better_underground.worldgen;
 
-import net.minecraft.world.gen.HeightContext;
 import net.minecraft.world.gen.decorator.Decorator;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -13,11 +12,8 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.heightprovider.HeightProvider;
-import net.minecraft.world.gen.heightprovider.HeightProviderType;
 import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 
-import java.util.Random;
 
 public class CustomConfiguredFeatures {
 
@@ -31,6 +27,7 @@ public class CustomConfiguredFeatures {
     private static ConfiguredFeature<?, ?> ORE_RHYODACITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.RHYODACITE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
     private static ConfiguredFeature<?, ?> ORE_NEPHELINE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.NEPHELINE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
     private static ConfiguredFeature<?, ?> ORE_GREY_DACITE = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.GREY_DACITE.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(200)))).spreadHorizontally().repeat(16));
+    private static ConfiguredFeature<?, ?> ORE_STONE_SAND = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BlockRegistry.STONE_SAND.getDefaultState(), 33)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(0), YOffset.fixed(64))))).spreadHorizontally().repeat(16);
 
         public static void register() {
             registerOre("compressed_stone", ORE_COMPRESSED_STONE);
@@ -43,11 +40,12 @@ public class CustomConfiguredFeatures {
             registerOre("rhyodacite", ORE_RHYODACITE);
             registerOre("nepheline", ORE_NEPHELINE);
             registerOre("grey_dacite", ORE_GREY_DACITE);
+            registerOre("stone_sand", ORE_STONE_SAND);
 
 
         }
 
-        private void registerOre(String id, ConfiguredFeature<?, ?> ORE) {
+        private static void registerOre(String id, ConfiguredFeature<?, ?> ORE) {
             RegistryKey<ConfiguredFeature<?, ?>> ore = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, Utils.ID(id));
             Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, ore.getValue(), ORE);
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ore);
