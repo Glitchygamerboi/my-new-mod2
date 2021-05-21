@@ -3,6 +3,7 @@ package net.glitchyystudios.better_underground.registry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.glitchyystudios.better_underground.BUItemGroups;
 import net.glitchyystudios.better_underground.Utils;
+import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
@@ -20,6 +21,8 @@ public class ItemRegistry {
     public static final Item RHYODACITE = new BlockItem(BlockRegistry.RHYODACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item NEPHELINE = new BlockItem(BlockRegistry.NEPHELINE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
     public static final Item GREY_DACITE = new BlockItem(BlockRegistry.GREY_DACITE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
+    public static final Item STONE_SAND = new BlockItem(BlockRegistry.STONE_SAND, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
+    public static final Item DINOSTATUE = new BlockItem(BlockRegistry.DINOSTATUE, new FabricItemSettings().group(BUItemGroups.BETTER_UNDERGROUND));
 
     public static void register() {
         Registry.register(Registry.ITEM, Utils.ID("compressed_stone"),COMPRESSED_STONE);
@@ -32,6 +35,8 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("rhyodacite"), RHYODACITE);
         Registry.register(Registry.ITEM, Utils.ID("nepheline"), NEPHELINE);
         Registry.register(Registry.ITEM, Utils.ID("grey_dacite"), GREY_DACITE);
+        Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
+        Registry.register(Registry.ITEM, Utils.ID("dinostatue"), DINOSTATUE);
     }
 
 }
