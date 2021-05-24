@@ -39,7 +39,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("grey_dacite"), GREY_DACITE);
         //use the code below to register an item, rename the item to the name of your item
         Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
-        Registry.register(Registry.ITEM, Utils.ID("greatsword"), new SwordBase(ToolMaterialWroughtIron.INSTANCE, 9, -4F, new Item.Settings().group(BUItemGroups.REALISTICS_WEAPONS))) ;
+        Registry.register(Registry.ITEM, Utils.ID("greatsword"), new SwordBase(ToolMaterialWroughtIron.INSTANCE, 9, -3F, new Item.Settings().group(BUItemGroups.REALISTICS_WEAPONS))) ;
     }
 
 }

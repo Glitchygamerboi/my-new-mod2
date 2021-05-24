@@ -11,7 +11,6 @@
 	"block.better_underground.grey_dacite": "Grey Dacite",
 	"block.better_underground.stone_sand": "Stone Sand",
 	"item.better_underground.greatsword": "Greatsword",
-	"use the json below to make a lang entry for a block/item, for an item, replace the block. with item.": "do that",
 	"itemGroup.better_underground.realistics_blocks": "Realistics in Pixels Blocks",
 	"itemGroup.better_underground.realistics_weapons": "Realistics in Pixels Weapons"
 }
