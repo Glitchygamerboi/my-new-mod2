@@ -11,6 +11,6 @@
 	"block.better_underground.grey_dacite": "Grey Dacite",
 	"block.better_underground.stone_sand": "Stone Sand",
 	"item.better_underground.greatsword": "Greatsword",
-	"itemGroup.better_underground.realistics_blocks": "Realistics in Pixels Blocks",
-	"itemGroup.better_underground.realistics_weapons": "Realistics in Pixels Weapons"
+	"itemGroup.better_underground.realistics_in_pixels_blocks": "Realistics in Pixels Blocks",
+	"itemGroup.better_underground.realistics_in_pixels_weapons": "Realistics in Pixels Weapons"
 }
