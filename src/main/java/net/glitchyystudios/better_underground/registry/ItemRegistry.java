@@ -1,13 +1,11 @@
 package net.glitchyystudios.better_underground.registry;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.glitchyystudios.better_underground.BUItemGroups;
-import net.glitchyystudios.better_underground.SwordBase;
-import net.glitchyystudios.better_underground.ToolMaterialWroughtIron;
-import net.glitchyystudios.better_underground.Utils;
+import net.glitchyystudios.better_underground.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.registry.Registry;
 
 public class ItemRegistry {
@@ -39,7 +37,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("grey_dacite"), GREY_DACITE);
         //use the code below to register an item, rename the item to the name of your item
         Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
-        Registry.register(Registry.ITEM, Utils.ID("greatsword"), new SwordBase(ToolMaterialWroughtIron.INSTANCE, 9, -3F, new Item.Settings().group(BUItemGroups.REALISTICS_WEAPONS))) ;
     }
+
 
 }
