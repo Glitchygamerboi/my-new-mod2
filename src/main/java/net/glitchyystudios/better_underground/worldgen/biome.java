@@ -4,10 +4,6 @@ import net.fabricmc.fabric.api.biome.v1.OverworldBiomes;
 import net.fabricmc.fabric.api.biome.v1.OverworldClimate;
 import net.glitchyystudios.better_underground.Utils;
 import net.glitchyystudios.better_underground.registry.BlockRegistry;
-import net.minecraft.block.Blocks;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -23,7 +19,7 @@ public class biome {
     }
 
 
-    public static final RegistryKey<Biome> RWASTES_KEY = RegistryKey.of(Registry.BIOME_KEY, Utils.ID("rwastes_key"));
+    public static final RegistryKey<Biome> RWASTES_KEY = RegistryKey.of(Registry.BIOME_KEY, Utils.ID("rhyolite_wastes"));
 
     public static void register() {
         Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, Utils.ID("rhyolite_wastes"), RWASTES_SURFACE_BUILDER);
