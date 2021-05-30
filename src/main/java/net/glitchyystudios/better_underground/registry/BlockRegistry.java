@@ -21,7 +21,9 @@ public static final Block RHYODACITE =new Block(FabricBlockSettings.copy(Blocks.
 public static final Block NEPHELINE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 public static final Block GREY_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
 public static final Block STONE_SAND = new Block(FabricBlockSettings.copy(Blocks.SAND).requiresTool().strength(1.5F, 5.5F));
-
+public static final Block BOREAL_DIRT = new Block(FabricBlockSettings.copy(Blocks.DIRT).requiresTool().strength(1.3F, 5.3F));
+public static final Block PEARL_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
+public static final Block LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool().strength(1.5F, 6.0F));
 //Follow the template below if you want to contribute a block, im going to create the BlockItem
 public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(0F, 0F));
     public static void register() {
@@ -36,9 +38,10 @@ public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blo
         Registry.register(Registry.BLOCK, Utils.ID("nepheline"), NEPHELINE);
         Registry.register(Registry.BLOCK, Utils.ID("grey_dacite"), GREY_DACITE);
         Registry.register(Registry.BLOCK, Utils.ID("stone_sand"), STONE_SAND);
-        Registry.register(Registry.BLOCK, Utils.ID("loam_block"), LOAM_BLOCK);
-        Registry.register(Registry.BLOCK, Utils.ID("grassy_loam_block"), GRASSY_LOAM_BLOCK);
-        //Follow the template below to register an block
+        Registry.register(Registry.BLOCK, Utils.ID("boreal_dirt"), BOREAL_DIRT);
+        Registry.register(Registry.BLOCK, Utils.ID("layerstone"), LAYERSTONE);
+        Registry.register(Registry.BLOCK, Utils.ID("pearl_dacite"), PEARL_DACITE);    
+          //Follow the template below to register an block
         Registry.register(Registry.BLOCK, Utils.ID("example_block"), EXAMPLE_BLOCK);
     }
 
