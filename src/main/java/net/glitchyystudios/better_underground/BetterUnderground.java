@@ -23,9 +23,10 @@ public class BetterUnderground implements ModInitializer {
 
 		System.out.println("THANKS FOR CONTRIBUTING, CONTRIBUTORS");
 		System.out.println("HOW MINECRAFT GOT ME INTO CODING");
-		System
-
+	
 		LOGGER.info("[Better Underground] has finished initializing!");
 	}
+
+	
 
 }
