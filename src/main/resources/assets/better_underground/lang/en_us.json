@@ -10,8 +10,10 @@
 	"block.better_underground.nepheline": "Nepheline",
 	"block.better_underground.grey_dacite": "Grey Dacite",
 	"block.better_underground.stone_sand": "Stone Sand",
-	"item.better_underground.greatsword": "Greatsword",
-	"biome.better_underground.rwastes_key": "Rhyolite Wastes",
+	"block.better_underground.layerstone": "Layerstone",
+	"block.better_underground.boreal_dirt": "Boreal Dirt",
+	"block.better_underground.pearl_dacite": "Pearl Dacite",
+	"biome.better_underground.rhyolite_wastes": "Rhyolite Wastes",
 	"itemGroup.better_underground.realistics_in_pixels_blocks": "Realistics in Pixels Blocks",
 	"itemGroup.better_underground.realistics_in_pixels_temp": "Realistics in Pixels TempTab"
 }
