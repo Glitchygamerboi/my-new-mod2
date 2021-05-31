@@ -1,6 +1,5 @@
 package net.glitchyystudios.better_underground;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
