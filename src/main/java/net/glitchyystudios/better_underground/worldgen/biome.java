@@ -14,7 +14,7 @@ import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.TernarySurfaceConfig;
 
 public class biome {
-    private static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> BOREAL_SURFACE_BUILDER = SurfaceBuilder.DEFAULT.withConfig(new TernarySurfaceConfig(BlockRegistry.BOREAL_DIRT.getDefaultState(), BlockRegistry.RHYODACITE.getDefaultState(), BlockRegistry.NEPHELINE.getDefaultState()));private static final Biome RWASTES = createRwastes();private static Biome createRwastes() {// We specify what entities spawn and what features generate in the biome// Aside from some structures, trees, rocks, plants and//   custom entities, these are mostly the same for each biome.// Vanilla configured features for biomes are defined in DefaultBiomeFeatures
+    private static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> BOREAL_SURFACE_BUILDER = SurfaceBuilder.DEFAULT.withConfig(new TernarySurfaceConfig(BlockRegistry.BOREAL_DIRT.getDefaultState(), BlockRegistry.RHYODACITE.getDefaultState(), BlockRegistry.NEPHELINE.getDefaultState()));private static final Biome BOREAL = createBoreal();private static Biome createBoreal() {// We specify what entities spawn and what features generate in the biome// Aside from some structures, trees, rocks, plants and//   custom entities, these are mostly the same for each biome.// Vanilla configured features for biomes are defined in DefaultBiomeFeatures
         
         SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
         DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
@@ -41,7 +41,7 @@ public class biome {
 
     public static void register() {
         Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, Utils.ID("boreal_plain"), BOREAL_SURFACE_BUILDER);
-        Registry.register(BuiltinRegistries.BIOME, BOREAL_KEY.getValue(), RWASTES);
+        Registry.register(BuiltinRegistries.BIOME, BOREAL_KEY.getValue(), BOREAL);
         OverworldBiomes.addContinentalBiome(BOREAL_KEY, OverworldClimate.COOL, 50);
         OverworldBiomes.addContinentalBiome(BOREAL_KEY, OverworldClimate.SNOWY, 50);
     }
