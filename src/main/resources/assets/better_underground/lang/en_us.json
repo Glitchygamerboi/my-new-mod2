@@ -13,7 +13,8 @@
 	"block.better_underground.layerstone": "Layerstone",
 	"block.better_underground.boreal_dirt": "Boreal Dirt",
 	"block.better_underground.pearl_dacite": "Pearl Dacite",
-	"biome.better_underground.rhyolite_wastes": "Rhyolite Wastes",
+	"biome.better_underground.boreal_plain": "Boreal Plain",
+	"biome.better_undeground.dover_hills": "Dover Hills",
 	"itemGroup.better_underground.realistics_in_pixels_blocks": "Realistics in Pixels Blocks",
 	"itemGroup.better_underground.realistics_in_pixels_temp": "Realistics in Pixels TempTab"
 }
