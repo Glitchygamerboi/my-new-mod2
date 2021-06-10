@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "better_underground:compressed_stone",
+        "better_underground:dolomite",
+	"better_underground:marble",
+	"better_underground:rhyolite",
+	"better_underground:limestone",
+	"better_underground:lake_missoula_claystone_sediment",
+	"better_underground:alkali_feldspar_granite",
+	"better_underground:rhyodacite",
+	"better_underground:nepheline",
+	"better_underground:grey_dacite",
+	"better_underground:stone_sand",
+	"better_underground:layerstone", 
+    "better_underground:pearl_dacite"
+    ]
+}
