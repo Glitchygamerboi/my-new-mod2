@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "better_underground:alkali_feldspar_granite"
+          "name": "better_underground:gold_ore_layerstone"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:raw_copper"
+          "name": "minecraft:raw_gold"
         }
       ],
       "conditions": [

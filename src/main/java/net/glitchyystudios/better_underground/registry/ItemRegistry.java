@@ -24,6 +24,7 @@ public class ItemRegistry {
     public static final Item BOREAL_DIRT = new BlockItem(BlockRegistry.BOREAL_DIRT, new FabricItemSettings().group(BUItemGroups.REALISTICS_BLOCKS));
     public static final Item PEARL_DACITE = new BlockItem(BlockRegistry.PEARL_DACITE, new FabricItemSettings().group(BUItemGroups.REALISTICS_BLOCKS));
     public static final Item LAYERSTONE = new BlockItem(BlockRegistry.LAYERSTONE, new FabricItemSettings().group(BUItemGroups.REALISTICS_BLOCKS));
+    public static final Item GOLD_ORE_LAYERSTONE = new BlockItem(BlockRegistry.GOLD_ORE_LAYERSTONE, new FabricItemSettings().group(BUItemGroups.REALISTICS_BLOCKS));
 
     public static void register() {
         Registry.register(Registry.ITEM, Utils.ID("compressed_stone"), COMPRESSED_STONE);
@@ -39,6 +40,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("boreal_dirt"), BOREAL_DIRT);
         Registry.register(Registry.ITEM, Utils.ID("pearl_dacite"), PEARL_DACITE);
         Registry.register(Registry.ITEM, Utils.ID("layerstone"), LAYERSTONE);
+        Registry.register(Registry.ITEM, Utils.ID("gold_ore_layerstone"), GOLD_ORE_LAYERSTONE);
         //use the code below to register an item, rename the item to the name of your item
         Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
     }

@@ -6,11 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "better_underground:alkali_feldspar_granite"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:raw_copper"
+          "name": "better_underground:boreal_dirt"
         }
       ],
       "conditions": [
