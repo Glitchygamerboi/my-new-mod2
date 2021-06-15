@@ -10,23 +10,23 @@ public class BlockRegistry {
 
     private BlockRegistry(){}
 
-    public static final Block COMPRESSED_STONE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block RHYOLITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block DOLOMITE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block ALKALI_FELDSPAR_GRANITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block RHYODACITE =new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block NEPHELINE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block GREY_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block STONE_SAND = new Block(FabricBlockSettings.copy(Blocks.SAND).requiresTool().strength(1.5F, 5.5F));
-public static final Block BOREAL_DIRT = new Block(FabricBlockSettings.copy(Blocks.DIRT).requiresTool().strength(1.3F, 5.3F));
-public static final Block PEARL_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(1.5F, 6.0F));
-public static final Block LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool().strength(1.5F, 6.0F));
-    public static final Block GOLD_ORE_LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool().strength(1.5F, 6.0F));
+    public static final Block COMPRESSED_STONE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool());
+    public static final Block RHYOLITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+    public static final Block MARBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+    public static final Block DOLOMITE = new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).requiresTool());
+    public static final Block LIMESTONE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+    public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block ALKALI_FELDSPAR_GRANITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block RHYODACITE =new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block NEPHELINE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block GREY_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block STONE_SAND = new Block(FabricBlockSettings.copy(Blocks.SAND).requiresTool());
+public static final Block BOREAL_DIRT = new Block(FabricBlockSettings.copy(Blocks.DIRT).requiresTool());
+public static final Block PEARL_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
+public static final Block LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static final Block GOLD_ORE_LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
 //Follow the template below if you want to contribute a block, im going to create the BlockItem
-public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool().strength(0F, 0F));
+public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
     public static void register() {
         Registry.register(Registry.BLOCK, Utils.ID("compressed_stone"), COMPRESSED_STONE);
         Registry.register(Registry.BLOCK, Utils.ID("rhyolite"), RHYOLITE);
