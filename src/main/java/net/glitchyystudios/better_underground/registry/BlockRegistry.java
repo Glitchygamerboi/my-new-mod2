@@ -25,6 +25,7 @@ public static final Block BOREAL_DIRT = new Block(FabricBlockSettings.copy(Block
 public static final Block PEARL_DACITE = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
 public static final Block LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
     public static final Block GOLD_ORE_LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
+    public static final Block PUMICE = new Block(FabricBlockSettings.copy(Blocks.STONE).requiresTool());
 //Follow the template below if you want to contribute a block, im going to create the BlockItem
 public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE).requiresTool());
     public static void register() {
@@ -43,6 +44,7 @@ public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blo
         Registry.register(Registry.BLOCK, Utils.ID("layerstone"), LAYERSTONE);
         Registry.register(Registry.BLOCK, Utils.ID("pearl_dacite"), PEARL_DACITE);   
         Registry.register(Registry.BLOCK, Utils.ID("gold_ore_layerstone"), GOLD_ORE_LAYERSTONE);
+        Registry.register(Registry.BLOCK,Utils.ID("pumice"), PUMICE);
           //Follow the template below to register an block
         Registry.register(Registry.BLOCK, Utils.ID("example_block"), EXAMPLE_BLOCK);
     }
