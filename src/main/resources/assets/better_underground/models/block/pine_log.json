@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "better_underground:block/pine_log_top",
+    "side": "better_underground:block/pine_log"
+  }
+}
