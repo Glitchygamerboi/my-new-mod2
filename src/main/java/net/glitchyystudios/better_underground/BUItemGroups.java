@@ -8,5 +8,5 @@ import net.minecraft.item.ItemStack;
 public class BUItemGroups {
 
     public static final ItemGroup REALISTICS_GEOLOGICAL_BLOCKS = FabricItemGroupBuilder.create(Utils.ID("realistics_geological_blocks")).icon(() -> new ItemStack(ItemRegistry.GREY_DACITE)).build();
-    public static final ItemGroup REALISTICS_NATURE_BLOCKS = FabricItemGroupBuilder.create(Utils.ID("realistics_nature_blocks")).icon(() -> new ItemStack(ItemRegistry.PINE_LOG)).build();
+    public static final ItemGroup REALISTICS_NATURE_BLOCKS = FabricItemGroupBuilder.create(Utils.ID("realistics_nature_blocks")).icon(() -> new ItemStack(ItemRegistry.PINE_PLANKS)).build();
 }

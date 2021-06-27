@@ -15,8 +15,11 @@
 	"block.better_underground.pearl_dacite": "Pearl Dacite",
 	"block.better_underground.gold_ore_layerstone": "Gilded Layerstone",
 	"block.better_underground.pumice": "Pumice",
+	"block.better_underground.pine_log": "Pine Log",
+	"block.better_underground.pine_planks": "Pine Planks",
+	"block.better_underground.pine_leaves": "Pine Leaves",
 	"biome.better_underground.boreal_plain": "Boreal Plain",
 	"biome.better_undeground.canadian_shield": "Canadian Shield",
-	"itemGroup.better_underground.realistics_in_pixels_blocks": "Realistics in Pixels Blocks",
-	"itemGroup.better_underground.realistics_in_pixels_temp": "Realistics in Pixels TempTab"
+	"itemGroup.better_underground.realistics_geology_blocks": "Realistics in Pixels Geology",
+	"itemGroup.better_underground.realistics_nature_blocks": "Realistics in Pixels Nature"
 }
