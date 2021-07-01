@@ -1,6 +1,5 @@
 package net.glitchyystudios.better_underground.registry;
 
-import com.sun.jna.platform.win32.WinBase;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.glitchyystudios.better_underground.*;
 import net.minecraft.item.BlockItem;
@@ -27,6 +26,7 @@ public class ItemRegistry {
     public static final Item LAYERSTONE = new BlockItem(BlockRegistry.LAYERSTONE, new FabricItemSettings().group(BUItemGroups.REALISTICS_GEOLOGICAL_BLOCKS));
     public static final Item GOLD_ORE_LAYERSTONE = new BlockItem(BlockRegistry.GOLD_ORE_LAYERSTONE, new FabricItemSettings().group(BUItemGroups.REALISTICS_GEOLOGICAL_BLOCKS));
     public static final Item PUMICE = new BlockItem(BlockRegistry.PUMICE, new FabricItemSettings().group(BUItemGroups.REALISTICS_GEOLOGICAL_BLOCKS));
+    public static final Item GRANODIORITE = new BlockItem(BlockRegistry.GRANODIORITE, new FabricItemSettings().group(BUItemGroups.REALISTICS_GEOLOGICAL_BLOCKS));
 
     public static void register() {
         Registry.register(Registry.ITEM, Utils.ID("compressed_stone"), COMPRESSED_STONE);
@@ -44,6 +44,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, Utils.ID("layerstone"), LAYERSTONE);
         Registry.register(Registry.ITEM, Utils.ID("gold_ore_layerstone"), GOLD_ORE_LAYERSTONE);
         Registry.register(Registry.ITEM, Utils.ID("pumice"), PUMICE);
+        Registry.register(Registry.ITEM, Utils.ID("granodiorite"), GRANODIORITE);
         //use the code below to register an item, rename the item to the name of your item
         Registry.register(Registry.ITEM, Utils.ID("stone_sand"), STONE_SAND);
     }
