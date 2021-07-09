@@ -2,6 +2,7 @@ package net.glitchyystudios.better_underground.registry;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.glitchyystudios.better_underground.Utils;
+import net.glitchyystudios.better_underground.special_blocks.PebbleBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
@@ -27,22 +28,22 @@ public static final Block LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks
     public static final Block GOLD_ORE_LAYERSTONE = new Block(FabricBlockSettings.copy(Blocks.STONE));
     public static final Block PUMICE = new Block(FabricBlockSettings.copy(Blocks.STONE));
     public static final Block GRANODIORITE = new Block(FabricBlockSettings.copy(Blocks.STONE));
-public static final Block COMPRESSED_STONE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block RHYOLITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block MARBLE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block DOLOMITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block LIMESTONE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block LAKE_MISSOULA_CLAYSTONE_SEDIMENT_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block ALKALI_FELDSPAR_GRANITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block RHYODACITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block NEPHELINE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block GREY_DACITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block STONE_SAND_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block PEARL_DACITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block LAYERSTONE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block GOLD_ORE_LAYERSTONE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block PUMICE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
-public static final Block GRANODIORITE_PEBBLE = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock COMPRESSED_STONE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock RHYOLITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock MARBLE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock DOLOMITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock LIMESTONE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock LAKE_MISSOULA_CLAYSTONE_SEDIMENT_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock ALKALI_FELDSPAR_GRANITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock RHYODACITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock NEPHELINE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock GREY_DACITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock STONE_SAND_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock PEARL_DACITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock LAYERSTONE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock GOLD_ORE_LAYERSTONE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock PUMICE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
+public static final PebbleBlock GRANODIORITE_PEBBLE = new PebbleBlock(FabricBlockSettings.copy(Blocks.GRANITE));
 //Follow the template below if you want to contribute a block, im going to create the BlockItem
 public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRANITE));
 
