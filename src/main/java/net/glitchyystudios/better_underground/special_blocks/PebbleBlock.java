@@ -13,6 +13,6 @@ public class PebbleBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.6f, 0.6f, 0.6f, 0.6f, 0.6f, 0.6f);
+        return VoxelShapes.cuboid(0.6f, 0.6f, 0.6f, 0.6f, 0.6f, 0.6f); 
     }
 }
